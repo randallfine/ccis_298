@@ -1,0 +1,111 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+}
+
+div,
+footer,
+aside,
+header {
+    position: relative;
+    margin: .5em;
+}
+
+section,
+aside,
+footer,
+header {
+    border: 1px solid #aaa;
+    padding: 1.25em;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: .5em;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    width: 15%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: auto;
+}
+
+nav ul li {
+    padding: 0;
+    margin: 3px 0 0;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    padding: 10px 1em;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    padding-top: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #c0c0c0;
+}
+
+aside h4 {
+    font-size: 1.5em
+}
+
+@media only screen and (min-width: 45em) {
+    body {
+        position: relative;
+    }
+    section {
+        margin-right: 22em;
+        min-height: 135px;
+    }
+    #projects {
+        position: absolute;
+        top: 14.5em;
+        right: 0;
+        width: 18.75em;
+    }
+    #classes {
+        position: absolute;
+        top: 26em;
+        right: 0;
+        width: 18.75em;
+    }
+    textarea {
+        width: 50%;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+    }
+    div {
+        clear: left;
+        min-height: 430px;
+    }
+}
