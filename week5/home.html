@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Randall Fine    
+CISS 298: Web Programming
+Program1
+11/25/2018-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js">
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="text-center">
+            <h1>Randall Fine</h1>
+            <h2>Not all who wander are lost</h2>
+            <nav class="navbar bg-success">
+                <div class="hidden-xs">
+                    <ul class="nav nav-justified">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./education.html">Education</a></li>
+                        <li><a href="./work.html">Work</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler hidden-sm hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#myNavbar"> &#9776;</button>
+                <div class="collapse navbar-toggleable-xs hidden-md hidden-lg" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="./education.html">Education</a></li>
+                        <li><a href="./work.html">Work</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-mid-offset-1">
+            <section id="aboutMe">
+                <h3>About Me</h3>
+                <img src="./assets/us.jpg" alt="A photo of my wife and I" height="350" width="350" class="pull-left">
+                <p>My name is Randall Fine. I am 38 years old. I am a husband, father, full time college student, and a fan of all things tech. My oldest daughter is 19 years old, my youngest daughter is 8 years old, my son is 15 years old, and I have an
+                    3 month old grandson. When I am not running SQL commands at work or programming C++ and web technologies for school, I am self learning Javascript and C#. I also enjoy "Netflixing" with my wife and hanging out with my family. In my
+                    spare time, I enjoy lifting weights.</p>
+                <p>Bacon ipsum dolor amet ball tip flank cow, jerky meatball porchetta turducken brisket. Shank tongue corned beef pork loin salami pork chop kevin. Pork corned beef bacon, burgdoggen shank alcatra hamburger. Kielbasa pork loin t-bone prosciutto
+                    andouille burgdoggen doner beef ribs chicken buffalo boudin ground round bacon ribeye. Pig ball tip short loin, tri-tip capicola flank buffalo hamburger. Porchetta jowl cow pork, sausage picanha frankfurter brisket sirloin salami.
+                    Salami ball tip chuck ham hock pastrami hamburger.</p>
+                <p>Turkey chuck andouille burgdoggen, biltong drumstick ham strip steak ground round cow. Chicken tongue drumstick biltong, pig tail landjaeger pork loin bresaola. Meatball capicola beef ribs, pork hamburger boudin fatback shankle bresaola.
+                    Rump chuck spare ribs fatback tongue short loin buffalo meatball t-bone jowl leberkas. Tongue buffalo porchetta, jowl pastrami ball tip prosciutto venison shank shoulder burgdoggen. Ham salami jerky beef turkey chicken venison ground
+                    round capicola tenderloin prosciutto.</p>
+            </section>
+            <section id="contactForm">
+                <h3>Contact Me</h3>
+                <form action="#" method="post" class="form-inline">
+                    <div class="form-group">
+                        <p><label for="name">Enter Your Name</label>
+                            <input class="form-control" type="text" id="name" name="name"></p>
+                        <p><label for="select">Select a topic</label>
+                            <select class="form-control" name="select" id="select">
+                                                <option>Make Friends</option>
+                                                <option>Intend To Hire</option>
+                                                <option>Like Your Page</option>
+                                                <option>Someone You Know</option>
+                                            </select>
+                        </p>
+                        <p>
+                            <label for="message">Type Your Message</label>
+                            <br>
+                            <textarea class="form-control" name="" id="message" cols="30" rows="10"></textarea>
+                            <input class="btn btn-primary" type="submit" value="Send">
+                            <input class="btn btn-warning" type="reset" value="Clear">
+                        </p>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="col-md-2">
+            <aside id="projects">
+                <h4>Personal Projects</h4>
+                <p><a href="https://randallfine.github.io">My Personal Site</a></p>
+            </aside>
+            <aside id="classes">
+                <h4>Classes I Am Currently Taking</h4>
+                <p><a href="http://www.ccis.edu/syllabi/syllabus_master.asp?PREFIX=CISS&COURSENUM=298">CCIS_298 Web Programming</a></p>
+                <p><a href="http://www.ccis.edu/syllabi/syllabus_master.asp?PREFIX=CISS&COURSENUM=241">CCIS_241 Programming I</a></p>
+            </aside>
+        </div>
+    </div>
+    <footer class="bg-success text-center">
+        <p>COPYWRITE &copy; 2018 Randall Fine
+            <a href="https://www.linkedin.com/in/randall-fine-755018117/"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" alt="linkedin logo" /></a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
